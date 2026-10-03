@@ -2,11 +2,11 @@ import os
 
 from crewai import Crew, LLM, Process
 
-from agents.manager import create_manager_agent
-from agents.market import create_market_agent
-from agents.business import create_business_agent
-from agents.technical import create_technical_agent
-from agents.challenger import create_challenger_agent
+from ..agents.manager import create_manager_agent
+from ..agents.market import create_market_agent
+from ..agents.business import create_business_agent
+from ..agents.technical import create_technical_agent
+from ..agents.challenger import create_challenger_agent
 
 from tasks.analysis import (
     create_market_task,
